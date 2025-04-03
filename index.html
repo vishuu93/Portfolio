@@ -1,58 +1,186 @@
- <!Doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-     <title>HTML Application</title>
-	 <link href="css/site.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Vishal Saini| Software Engineer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
 </head>
+<body class="bg-gray-100 text-gray-900">
 
-<body>
-    <div class="main-container">
-        <div class="cloud-image">
-            <img src="img/successCloudNew.svg" />
-        </div>
-        <div class="content">
-            <div class="tweet-container">
-            <a href="http://twitter.com/intent/tweet/?text=I%20just%20created%20a%20new%20HTML%20website%20on%20Azure%20using%20Azure%20DevOps%20Project&hashtags=AzureDevOpsProject%2CVSTS%20%40Azure%20%40VSTS">
-                <img src="img/tweetThis.svg" />
-            </a>            
-        </div>
-            <div class="content-body">
-                <div class="success-text">Success!</div>
-                <div class="description line-1"> Azure DevOps Project has been successfully setup</div>
-                <div class="description line-2"> Your HTML app is up and running on Azure</div>
-                <div class="next-steps-container">
-                    <div class="next-steps-header">Next up</div>
-                    <div class="next-steps-body">
-                        <div class="step">
-                            <div class="step-icon">
-                                <img src="img/cloneWhite.svg">
-                            </div>
-                            <div class="step-text"><a href="https://go.microsoft.com/fwlink/?linkid=862409">Clone your code repository and start developing your application on IDE of your choice</a></div>
-                        </div>
-                        <div class="step">
-                            <div class="step-icon">
-                                <img src="img/deployWhite.svg">
-                            </div>
-                            <div class="step-text"><a href="https://go.microsoft.com/fwlink/?linkid=862410">View your CI/CD pipeline on Visual Studio Team Services and customize it as per your needs</a></div>
-                        </div>
-                        <div class="step">
-                            <div class="step-icon">
-                                <img src="img/stackWhite.svg">
-                            </div>
-                            <div class="step-text"><a href="http://portal.azure.com">View your service stack in the Azure Portal</a></div>
-                        </div>
-                        <div class="step">
-                            <div class="step-icon">
-                                <img src="img/lightbulbWhite.svg">
-                            </div>
-                            <div class="step-text"><a href="https://go.microsoft.com/fwlink/?linkid=862126">Learn more about all you can do with Azure projects by visiting the documentation</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!-- Navigation Bar -->
+  <nav class="bg-blue-600 p-4 shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <a href="#" class="text-white text-2xl font-bold"></a>
+      <ul class="flex space-x-6 text-white">
+        <li><a href="#about" class="hover:text-gray-300">About</a></li>
+        <li><a href="#education" class="hover:text-gray-300">Education</a></li>
+        <li><a href="#skills" class="hover:text-gray-300">Skills</a></li>
+        <li><a href="#experience" class="hover:text-gray-300">Experience</a></li>
+        <li><a href="#Projects" class="hover:text-gray-300">Projects</a></li>
+        <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+      </ul>
     </div>
-</body>
+  </nav>
 
+  <!-- Hero Section -->
+  <section id="hero" class="bg-blue-600 text-white text-center py-16">
+    <h1 class="text-5xl font-semibold">Vishal Saini</h1>
+    <p class="mt-4 text-xl">A 3rd-year B.Tech Computer Science Student | Software Developer</p>
+    <p class="mt-2">Passionate about Software Development, Algorithms, and Technology</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-4 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-semibold text-center mb-6">About Me</h2>
+    <p class="text-lg text-gray-700">
+      I am a third-year B.Tech Computer Science student with a passion for software development, algorithms, and technology. I am proficient in Java, C, and C++, and I have experience with data structures, web development, and cloud computing. I am always looking to enhance my skills and contribute to impactful projects.
+    </p>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="bg-gray-50 py-16 px-4">
+    <h2 class="text-3xl font-semibold text-center mb-6">Education</h2>
+    <div class="max-w-4xl mx-auto space-y-4">
+      <div>
+        <h3 class="text-xl font-semibold">UPES, Dehradun</h3>
+        <p>B.Tech, Computer Science (Aug 2022 – Aug 2026)</p>
+        <p class="text-gray-600">Relevant Coursework: Data Structures, Algorithms, Cloud Computing, Web Development</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold">Sky Hawk</h3>
+        <p>12th Grade -Scored 76%</p>
+        <p>10th Grade -Scored 89%</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 px-4 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-semibold text-center mb-6">Skills</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+      <div class="bg-blue-100 p-4 rounded-lg text-center">
+        <h3 class="font-semibold">Java</h3>
+      </div>
+      <div class="bg-blue-100 p-4 rounded-lg text-center">
+        <h3 class="font-semibold">C</h3>
+      </div>
+      <div class="bg-blue-100 p-4 rounded-lg text-center">
+        <h3 class="font-semibold">C++</h3>
+      </div>
+      <div class="bg-blue-100 p-4 rounded-lg text-center">
+        <h3 class="font-semibold">Cloud Computing</h3>
+      </div>
+      <div class="bg-blue-100 p-4 rounded-lg text-center">
+        <h3 class="font-semibold">Git</h3>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="bg-gray-50 py-16 px-4">
+    <h2 class="text-3xl font-semibold text-center mb-6">Experience</h2>
+    <div class="max-w-4xl mx-auto">
+      <div>
+        <h3 class="text-xl font-semibold">Dhaatri Internship</h3>
+        <p class="text-gray-600">Date: [1.06.2023 to 31.07.2023]</p>
+        <ul class="list-disc pl-5 text-gray-700">
+          <li>Contributed to documenting educational schemes for Scheduled Castes and Scheduled Tribes students in six states.</li>
+          <li>Coordinated with another intern to contact companies about policies related to recruiting visually impaired candidates.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+   <!-- p Section -->
+   <section id="Projects" class="bg-gray-50 py-16 px-4">
+    <h2 class="text-3xl font-semibold text-center mb-6">Projects</h2>
+    <div class="max-w-4xl mx-auto">
+      
+      <!-- Project 1 -->
+      <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+        <h3 class="text-xl font-semibold mb-2">Streamlit Ml App</h3>
+        <p class="text-gray-700">
+          
+        </p>
+        <div class="mt-3">
+          <a href="https://github.com/vishuu93/Ml-App-Project.git" target="_blank" class="text-blue-500 font-semibold">🔗 GitHub Repo</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <h3 class="text-xl font-semibold mb-2">Docker Experiments</h3>
+        <p class="text-gray-700">
+        </p>
+        <div class="mt-3">
+          <a href="https://github.com/vishuu93/DockSpace.git" target="_blank" class="text-blue-500 font-semibold">🔗 GitHub Repo</a>
+          <a href="https://ml-app-project-q4sfsdx5zytaa7qdvaa2cu.streamlit.app/" target="_blank" class="text-blue-500 font-semibold">🔗 Live Demo</a>
+        </div>
+      </div>
+
+
+
+      <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+        <h3 class="text-xl font-semibold mb-2">Binary Classifiaction App</h3>
+        <p class="text-gray-700">
+          
+        </p>
+        <div class="mt-3">
+          <a href="https://github.com/vishuu93/Binary-Classification-App.git" target="_blank" class="text-blue-500 font-semibold">🔗 GitHub Repo</a>
+          <a href="https://binary-classification-app-d6qoknyqgz4mswdpcbrkmp.streamlit.app/" target="_blank" class="text-blue-500 font-semibold">🔗 Live Demo</a>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+        <h3 class="text-xl font-semibold mb-2">Streamlit Dashboard</h3>
+        <p class="text-gray-700">
+          
+        </p>
+        <div class="mt-3">
+          <a href="https://github.com/vishuu93/Streamlit_Dashboars.git" target="_blank" class="text-blue-500 font-semibold">🔗 GitHub Repo</a>
+          <a href="https://appdashboard-5amf5fnsqwrnakozykrbkq.streamlit.app/" target="_blank" class="text-blue-500 font-semibold">🔗 Live Demo</a>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+        <h3 class="text-xl font-semibold mb-2">Titanic Saurvival Predictor</h3>
+        <p class="text-gray-700">
+          
+        </p>
+        <div class="mt-3">
+          <a href="https://github.com/vishuu93/Titanic_Survival_Predictor.git" target="_blank" class="text-blue-500 font-semibold">🔗 GitHub Repo</a>
+          <a href="https://titanicsurvivalpredictor-dwevyh9thmtwpe9rfrbfvy.streamlit.app/" target="_blank" class="text-blue-500 font-semibold">🔗 Live Demo</a>
+        </div>
+      </div>
+
+    </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-4 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-semibold text-center mb-6">Contact</h2>
+    <p class="text-center text-lg">Feel free to reach out to me for collaboration, questions, or opportunities.</p>
+    <div class="text-center mt-6">
+      <a href="mailto:vishisaini9393@gmail.com" class="bg-blue-600 text-white py-2 px-6 rounded-full text-xl hover:bg-blue-700">Email Me</a>
+    
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-6 text-center">
+    <p>&copy; 2025 Vishal Saini. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Optional JavaScript code for interactivity can be added here
+  </script>
+</body>
 </html>
